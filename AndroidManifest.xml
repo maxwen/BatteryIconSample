@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.omnirom.batteryicons"
+	android:versionCode="1"
+	android:versionName="1.0" >
+
+	<uses-sdk
+		android:minSdkVersion="8"
+		android:targetSdkVersion="21" />
+
+	<application
+		android:allowBackup="false"
+		android:label="BatteryIcons" >
+		<activity
+			android:name=".stat_sys_battery_square"
+			android:label="Square" >
+			<intent-filter>
+				<action android:name="org.omnirom.BatteryIconPack" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+	</application>
+
+</manifest>
